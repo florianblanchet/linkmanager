@@ -1,0 +1,84 @@
+body{	background-image: url("/Users/florianblanchet/Documents/Gestionnaire de lien/images/background.jpg");
+		background-repeat: no repeat;
+		background-attachment:fixed;
+		background-position: center;	}
+
+img {	width: 60px;
+		height: 60px;	}
+		
+
+
+/* Moteur de recherche */
+form
+{
+	position: absolute;
+	top:60px;
+	left: 35%;
+}
+
+form input .1
+{
+	top:70px;
+}
+
+
+
+
+nav{background-color: rgba(255, 255, 255, 0.3);
+	font: bold 20px "Courier New", Courier, mono;
+	color: white;
+	position:fixed;
+	display: inline-block;
+	text-align: right;
+	top:20px;
+	left: 25%;
+
+	}
+nav ul
+{    list-style-type: none;}
+
+nav li
+{    display: inline-block;
+    margin-right: 50px;}
+								
+
+											/*  Corps   */
+h1{	color:  #f3eee6;
+	text-align: center;
+	font: 50px "Courier New", Courier, mono;	}
+
+h2{	color: #f3eee6;
+	font-family: "Courier New", Courier, mono;
+	text-align: center;	}
+
+section{	display:inline-block;  /* definition des blocs avec liens */
+			position: absolute;
+			width:20%;
+			height:300px;}
+
+.sect1{	left:5%;					/* Positionnement des blocs */
+			top:  150px;}
+.sect2{	left:35%;
+			top:  150px;}
+.sect3{	left:65%;
+			top:  150px;}
+.sect4{	left: 5%;
+		top:  550px;}
+
+aside{	position:absolute;
+		background-color: rgba(8, 8, 8, 0.29);
+		border: 3px solid #e89442;
+		border-radius: 20px;
+		height: 100%;
+		padding:10px;
+		overflow:auto;
+		box-shadow: 7px -7px 10px #e89442;
+		width:100%;	}
+
+footer{	position:absolute;
+		top:900px;
+		left:35%;
+		text-align: center;
+		font-size: 22px;
+		font-variant: small-caps;
+		text-shadow: 0 0 2px #f9f7f7;}

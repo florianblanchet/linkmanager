@@ -1,0 +1,143 @@
+body{	background-image: url("./DJMauve.jpg");
+		background-repeat: no repeat;
+		background-attachment:fixed;
+		background-position: top;
+
+			}
+
+/*Taille des icones */
+img {	width: 50px;
+		height: 50px;
+		border-radius: 8px;	}
+		
+.gold{
+	color: rgb(224,180,70);
+ }
+
+/* Positionnement moteur de recherche */
+.recherche{
+	position: absolute;
+	top:60px;
+	left: 25%;}
+					
+/* Design des titres */
+h1{	color:  #f3eee6;
+	text-align: center;
+	font: 50px "Courier New", Courier, mono;}
+
+h2{	color: rgb(224,180,70);
+	font-family: "Courier New", Courier, mono;
+	text-align: center;
+	text-shadow: 0 0 3px rgba(8, 8, 8, 0.9);
+		}
+/*main button*/
+.main-btn{
+	font-size: 15px;
+	color: #FFD700;
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: #FFD700;
+	border-radius: 4px;
+	background: linear-gradient(to top, rgb(34,9,66) 50%,transparent 50%);
+    background-size: 100% 200%;
+    background-position:top;
+	width:120px;
+	 -webkit-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+/* definition des blocs avec liens */
+section{	display:inline-block;  
+			position: absolute;
+			width:20%;
+			height:300px;
+		 }
+/*Design des blocs application*/
+aside{	position:absolute;
+		background-color: rgba(255,255,255, 0.2);
+		border: 1px solid rgba(224,180,70,1);
+		border-radius: 20px;
+		height: 100%;
+		padding:10px;
+		overflow:auto;
+		box-shadow: 7px -7px 10px rgba(255,255,255, 0.4);
+		width:100%;	}
+/* Positionnement des blocs */
+.sect1{	left:5%;					
+			top:  150px;}
+.sect2{	left:35%;
+			top:  150px;}
+.sect3{	left:65%;
+			top:  150px;}
+.sect4{	left: 5%;
+			top:  550px;}
+.sect5{	left:35%;
+			top:  550px;}
+.sect6{	left:65%;					
+			top:  550px;}
+.sect7{	left:5%;					
+			top:  950px;}
+.sect8{	left:35%;
+			top:  950px;}
+.sect9{	left:65%;
+			top:  950px;}
+.sect10{	left: 5%;
+			top:  1350px;}
+.sect11{	left:35%;
+			top:  1350px;}
+.sect12{	left:65%;					
+			top:  1350px;}
+.add{
+	color: rgb(224,180,70);
+	font-family:100px, "Courier New", Courier, mono;
+	text-shadow: 0 0 10px rgba(8, 8, 8, 0.9);
+ }
+
+/*Pied de page*/
+footer{	position:absolute;
+		top:1400px;
+		left:35%;
+		text-align: center;
+		font-size: 22px;
+		font-variant: small-caps;
+		text-shadow: 0 0 2px #f9f7f7;}
+/*Exception si la taille de l'écran est trop petite, on réorganise*/
+@media screen and (max-width: 800px){
+
+	section{	display:inline-block;  
+			position: absolute;
+			width:30%;
+			height:300px;}
+
+	.sect1{	left:5%;					
+			top:  150px;}
+	.sect2{	left:55%;
+			top:  150px;}
+	.sect3{	left:5%;	
+			top:  550px;}
+	.sect4{	left:55%;
+			top:  550px;}
+	.sect5{	left:5%;					
+			top:  950px;}
+	.sect6{	left:55%;					
+			top:  950px;}
+	.sect7{	left:5%;					
+			top:  1350px;}
+	.sect8{	left:55%;
+			top:  1350px;}
+	.sect9{	left:5%;					
+			top:  1750px;}
+	.sect10{	left:55%;
+			top:  1750px;}
+	.sect11{	left:5%;					
+			top:  2150px;}
+	.sect12{	left:55%;
+			top:  2150px;}
+
+	.recherche{
+	position: absolute;
+	top:60px;
+	left: 5%;}
+
+	}
+
