@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Gestionnaire de liens  </title>
+		
+		<!-- styling -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/mainstyle.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+	 </head>
+
+	<body>
+	<script>
+		function validateForm() {
+		    var x = document.forms["myForm"]["title"].value;
+		    if (x == "") {
+		        alert("Le titre doit être remplit");
+		        return false;
+		    }
+		}
+	 </script>
+
+		<center class="recherche"> 
+			<form name="download" method="post" action="index.php"> 
+				<p>
+				<input type="search" name="download" id="download" size="35" maxlength="240" placeholder="URL Youtube à télécharger"> 
+				<input type=submit name="valider" value="Valider" class="main-btn"> 
+				<p/>
+			</form> 
+		 </center> 
+		
+		{%for categ in categories%}
+			
+				
+				<section class="sect{{categ[1]}} animated fadeInUp">	
+					<h2> {{categ[0]}} </h2>
+					<aside class="asid{{categ[1]}}">
+						<p>
+						{% for link in links%}
+						{% if link.categorie==categ[0]%}
+							<a href={{link.href}} alt={{link.href}} title={{link.title}}> 
+							<img src="{{ url_for('static', filename='img/'+link.title+'.png')}}"/> 
+							</a>
+						{%endif%}
+						{%endfor%}
+						</p>
+					</aside>
+				 </section>
+		{%endfor%}
+
+		<section class="sect{{taille}} animated fadeInUp">	
+			<h2>New icone</h2>
+			<aside class="asid{{taille}}">
+				<div class="add">
+				<p>
+				<form name="addicone" action="/create/" method="Post" onsubmit="return validateForm()">
+					Nom : <input id="name" type="text" size="30" name="title" autofocus/>
+					URL : <input id="url" type="text" size="30" name="href" value="http://www." required/>
+					Catégorie :<input id="categorie" type="text" size="20" name="categorie"/>
+					<input type="submit" name="valider" value="OK" name="Post"/>
+				</form>
+				<br/>
+				<br/>
+				<form name="suppicone" action="/delete/" method="Post" onsubmit="return validateForm()">
+					Nom de l'icone à supprimer :<input id="name" type="text" size="30" name="title" autofocus/>
+					<input type="submit" name="valider" value="OK" name="Post"/>
+				</form>
+				</p>
+				</div>
+			</aside>
+		 </section>
+
+		<footer></footer>
+
+	</body>
+</html>
