@@ -30,8 +30,6 @@
 		 </center> 
 		
 		{%for categ in categories%}
-			
-				
 				<section class="sect{{categ[1]}} animated fadeInUp">	
 					<h2> {{categ[0]}} </h2>
 					<aside class="asid{{categ[1]}}">
@@ -59,6 +57,7 @@
 					Catégorie :<input id="categorie" type="text" size="20" name="categorie"/>
 					<input type="submit" name="valider" value="OK" name="Post"/>
 				</form>
+				<p>{{msg}}</p>
 				<br/>
 				<br/>
 				<form name="suppicone" action="/delete/" method="Post" onsubmit="return validateForm()">
